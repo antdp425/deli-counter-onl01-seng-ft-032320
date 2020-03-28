@@ -1,13 +1,10 @@
 def line (array)
-  count = 0
+  # count = 0
   current_line = []
-  # if array.length >= 1
-  if array.length == 1
-    puts"The line us currently: 1. #{array[0]}."
-  elsif array.length > 1
-      array.collect do |linee|
-        count +=1
-        current_line << " #{count}. #{linee}"
+  if array.length >= 1
+      array.each do |linee|
+        # count +=1
+        current_line << " #{array.index(linee)+1}. #{linee}"
       end
       puts "The line is currently:" + current_line.join
   else
