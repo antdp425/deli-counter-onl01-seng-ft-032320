@@ -2,9 +2,9 @@ def line (array)
   # count = 0
   current_line = []
   if array.length >= 1
-      array.each do |linee|
+      array.each do |person|
         # count +=1
-        current_line << " #{array.index(linee)+1}. #{linee}"
+        current_line << " #{array.index(person)+1}. #{person}"
       end
       puts "The line is currently:" + current_line.join
   else
