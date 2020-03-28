@@ -1,12 +1,12 @@
 def line (array)
   # count = 0
-  current_line = []
+  current_line = "The line is currently:"
   if array.length >= 1
       array.each do |person|
         # count +=1
         current_line << " #{array.index(person)+1}. #{person}"
       end
-      puts "The line is currently:" + current_line.join
+      puts current_line
   else
     puts "The line is currently empty."
   end
